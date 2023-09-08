@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body>
+  <main class="app">
+
+    <div class="main-container">
+      <div class="name-section">
+        <img src="images/image-jeremy.png" alt="profile photo">
+        <p>Report for</p>
+        <h1>Jeremy Robson</h1>
+      </div>
+      <div class="selection-section">
+        <h2 class="active" id="dailyButton">Daily</h2>
+        <h2 id="weeklyButton">Weekly</h2>
+        <h2 id="monthlyButton">Monthly</h2>
+      </div>
+    </div>
+
+
+    <!-- Work -->
+    <div class="report-container work">
+      <img src="images/icon-work.svg" alt="">
+      <div class="report-container-content">
+        <div class="head">
+          <h2>Work</h2>
+          <img src="images/icon-ellipsis.svg" alt="toggle">
+        </div>
+        <div class="current-time">
+          <h3 id="workTimeDisplay">32hrs</h3>
+        </div>
+        <div class="previous-time">
+          <p class="time-state">Last Week -
+            <span id="workPreviousTime"> 36</span>hrs
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Play -->
+    <div class="report-container play">
+      <img src="images/icon-play.svg" alt="">
+      <div class="report-container-content">
+        <div class="head">
+          <h2>Play</h2>
+          <img src="images/icon-ellipsis.svg" alt="toggle">
+        </div>
+        <div class="current-time">
+          <h3 id="playTimeDisplay">10hrs</h3>
+        </div>
+        <div class="previous-time">
+          <p class="time-state">Last Week -
+            <span id="playPreviousTime">8</span>hrs
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Study -->
+    <div class="report-container study">
+      <img src="images/icon-study.svg" alt="">
+      <div class="report-container-content">
+        <div class="head">
+          <h2>Study</h2>
+          <img src="images/icon-ellipsis.svg" alt="toggle">
+        </div>
+        <div class="current-time">
+          <h3 id="studyTimeDisplay">4hrs</h3>
+        </div>
+        <div class="previous-time">
+          <p class="time-state">Last Week -
+            <span id="studyPreviousTime">7</span>hrs
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Exercise -->
+    <div class="report-container exercise">
+      <img src="images/icon-exercise.svg" alt="">
+      <div class="report-container-content">
+        <div class="head">
+          <h2>Exercise</h2>
+          <img src="images/icon-ellipsis.svg" alt="toggle">
+        </div>
+        <div class="current-time">
+          <h3 id="exerciseTimeDisplay">4hrs</h3>
+        </div>
+        <div class="previous-time">
+          <p class="time-state">Last Week -
+            <span id="exercisePreviousTime">5</span>hrs
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Social -->
+    <div class="report-container social">
+      <img src="images/icon-social.svg" alt="">
+      <div class="report-container-content">
+        <div class="head">
+          <h2>Social</h2>
+          <img src="images/icon-ellipsis.svg" alt="toggle">
+        </div>
+        <div class="current-time">
+          <h3 id="socialTimeDisplay">5hrs</h3>
+        </div>
+        <div class="previous-time">
+          <p class="time-state">Last Week -
+            <span id="socialPreviousTime">10</span>hrs
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Self Care -->
+    <div class="report-container self-care">
+      <img src="images/icon-self-care.svg" alt="">
+      <div class="report-container-content">
+        <div class="head">
+          <h2>Self Care</h2>
+          <img src="images/icon-ellipsis.svg" alt="toggle">
+        </div>
+        <div class="current-time">
+          <h3 id="selfCareTimeDisplay">2hrs</h3>
+        </div>
+        <div class="previous-time">
+          <p class="time-state">Last Week -
+            <span id="selfCarePreviousTime">2</span>hrs
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+</body>
+
+</html>

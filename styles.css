@@ -1,0 +1,163 @@
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Soft-blue-play: hsl(195, 74%, 62%);
+    --Light-red-study: hsl(348, 100%, 68%);
+    --Lime-green-exercise: hsl(145, 58%, 55%);
+    --Violet-social: hsl(264, 64%, 52%);
+    --Soft-orange-self-care: hsl(43, 84%, 65%);
+    /* ### Neutral */
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+* {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    /* - Weights: 300, 400, 500 */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    height: 100dvh;
+    background-color: var(--Very-dark-blue);
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    width: 80vw;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+    grid-row: span 2;
+    background-color: var(--Dark-blue);
+    border-radius: .5rem;
+}
+
+.name-section {
+    background-color: var(--Blue);
+    padding: 2rem;
+    border-radius: .5rem;
+    height: 55%;
+}
+
+.name-section>p {
+    font-size: .8rem;
+    color: var(--Pale-Blue);
+    margin: 0;
+    padding-top: 2.5rem;
+    padding-bottom: 0.2rem;
+}
+
+.name-section>h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.name-section>img {
+    width: 80px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.selection-section {
+    padding: 1rem 2rem;
+}
+
+.selection-section>h2 {
+    font-weight: 300;
+    line-height: 1.2rem;
+    color: var(--Pale-Blue);
+    cursor: pointer;
+}
+
+.selection-section>h2:hover {
+    color: white;
+}
+
+.active {
+    color: white !important;
+}
+
+/* REPORT CONTAINERS */
+.report-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.report-container>img {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: -.3rem;
+    right: -10rem;
+    overflow: hidden;
+}
+
+.report-container-content {
+    background-color: var(--Dark-blue);
+    border-radius: .5rem;
+    height: 80%;
+    padding: 1rem;
+}
+
+.current-time>h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-state,
+.time-state>span {
+    font-size: .8rem;
+    color: var(--Pale-Blue);
+}
+
+/* Work */
+.work {
+    background-color: var(--Light-red-work);
+}
+
+/* Play */
+.play {
+    background-color: var(--Soft-blue-play);
+}
+
+/* Study */
+.study {
+    background-color: var(--Light-red-study);
+}
+
+/* Exercise */
+.exercise {
+    background-color: var(--Lime-green-exercise);
+}
+
+/* Social */
+.social {
+    background-color: var(--Violet-social);
+}
+
+/* Self Care */
+.self-care {
+    background-color: var(--Soft-orange-self-care);
+}
