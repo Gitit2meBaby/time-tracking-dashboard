@@ -127,3 +127,4 @@ monthlyButton.addEventListener('click', () => {
 
 // Initial content update (default to 'daily' when the page loads)
 fetchDataDaily();
+
